@@ -4,7 +4,7 @@
 
 ![title](https://user-images.githubusercontent.com/22433243/122457400-fcde6c80-cf84-11eb-8ff3-65264e80c222.png)
 
-Github Action to generate an output file from a command execution 📝
+Github Action to generate an output file from a command execution (success or error) 📝
 
 * * *
 
