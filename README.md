@@ -37,7 +37,7 @@ _**Note**: You can then access the **output file** in the directory **where you 
 ```yaml
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: GuillaumeFalourd/command-output-file-action@main
+      - uses: GuillaumeFalourd/command-output-file-action@v1
         with:
           command_line: ls -lha
           output_file_name: output.txt
@@ -49,7 +49,7 @@ _**Note**: You can then access the **output file** in the directory **where you 
 ```yaml
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: GuillaumeFalourd/command-output-file-action@main
+      - uses: GuillaumeFalourd/command-output-file-action@v1
         with:
           command_line: ls -lha
           output_file_name: output.txt
