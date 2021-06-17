@@ -1,0 +1,24 @@
+name: Action test on Windows
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - uses: GuillaumeFalourd/command-output-file-action@main
+        with:
+          command_line: ls -lha
+          output_file_name: output.txt
+          display_file_content: NO
+      - name: Same command with output file filled
+        run: ls -lha &> new_output.txt
+        shell: bash
+      - uses: GuillaumeFalourd/diff-action@v1
+        with:
+          first_file_path: output.txt
+          second_file_path: new_output.txt
+          expected_result: FAILED
