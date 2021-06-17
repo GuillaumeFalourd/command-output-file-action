@@ -1,0 +1,42 @@
+name: 'Command output file Action 📝'
+
+description: 'Github Action to generate an output file from a command execution 📝'
+
+inputs:
+    command_line:
+        description: 'The command line you want to run'
+        required: true
+    output_file_name:
+        description: 'The .txt file name to gather the command line output'
+        required: true
+    display_file_content:
+        description: ' .txt file content'
+        required: true
+        default: 'YES'
+
+outputs:
+  output_file_name:
+    description: "command line output file"
+    value: ${{ steps.file.outputs.output_file_name }}
+
+runs:
+  using: "composite"
+  steps:
+
+    - id: file
+      run: |
+        ${{ inputs.command_line }} &> ${{ inputs.output_file_name }}
+        echo "::set-output name=output_file_name::${{ inputs.output_file_name }}"
+      shell: bash
+    
+    - run: |
+        echo ➡️ OUTPUT file name is ${{ steps.file.outputs.output_file_name }}
+        if [ YES == ${{ inputs.display_file_content }} ]; then
+          echo OUTPUT file content
+          cat ${{ inputs.output_file_name }}
+        fi
+      shell: bash
+
+branding:
+    icon: 'terminal'
+    color: 'blue'
