@@ -1,5 +1,7 @@
 # command-output-file-action
 
+[![Action test on Ubuntu](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/ubuntu_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/ubuntu_test_command_output.yml) [![Action test on MacOS](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/macos_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/macos_test_command_output.yml) [![Action test on Windows](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/windows_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/windows_test_command_output.yml)
+
 Github Action to generate an output file from a command execution 📝
 
 * * *
