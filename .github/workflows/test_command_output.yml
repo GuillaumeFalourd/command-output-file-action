@@ -15,5 +15,10 @@ jobs:
           command_line: ls -lha
           output_file_name: output.txt
           display_file_content: NO
-      - run: ls -lha
-      - run: cat output.txt
+      - name: Same command with output file filled
+        run: ls -lha &> new_output.txt
+      - uses: GuillaumeFalourd/diff-action@v1
+        with:
+          first_file_path: output.txt
+          second_file_path: new_output.txt
+          expected_result: FAILED
