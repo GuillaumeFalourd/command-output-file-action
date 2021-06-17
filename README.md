@@ -26,7 +26,7 @@ Field | Mandatory | Observation
 **output_file_name** | YES | ex: `output.txt`
 **display_file_content** | NO | `YES` (default) or `NO`
 
-You can then access the output file in the directory when you ran the action.
+_**Note**: You can then access the **output file** in the directory **where you ran the action**._
 
  * * *
 
