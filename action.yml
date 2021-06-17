@@ -30,9 +30,9 @@ runs:
       shell: bash
     
     - run: |
-        echo ➡️ OUTPUT file name is ${{ steps.file.outputs.output_file_name }}
+        echo "➡️ OUTPUT file name is \e[32m${{ steps.file.outputs.output_file_name }}\e[0m"
         if [ YES == ${{ inputs.display_file_content }} ]; then
-          echo OUTPUT file content
+          echo "\e[32m ➡️ The OUTPUT file content is:\e[0m"
           cat ${{ inputs.output_file_name }}
         fi
       shell: bash
