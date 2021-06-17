@@ -51,6 +51,7 @@ jobs:
           display_file_content: NO
       - name: Same command with output file filled
         run: ls -lha &> new_output.txt
+        shell: bash
       - uses: GuillaumeFalourd/diff-action@v1
         with:
           first_file_path: output.txt
