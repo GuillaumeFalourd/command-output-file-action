@@ -2,6 +2,8 @@
 
 [![Action test on Ubuntu](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/ubuntu_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/ubuntu_test_command_output.yml) [![Action test on MacOS](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/macos_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/macos_test_command_output.yml) [![Action test on Windows](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/windows_test_command_output.yml/badge.svg)](https://github.com/GuillaumeFalourd/command-output-file-action/actions/workflows/windows_test_command_output.yml)
 
+![title](https://user-images.githubusercontent.com/22433243/122457400-fcde6c80-cf84-11eb-8ff3-65264e80c222.png)
+
 Github Action to generate an output file from a command execution 📝
 
 * * *
@@ -20,9 +22,11 @@ The [`actions/checkout`](https://github.com/actions/checkout) is mandatory to us
 
 Field | Mandatory | Observation
 ------------ | ------------  | -------------
-**command_line** | YES | ex: `la -lha`
+**command_line** | YES | ex: `ls -lha`
 **output_file_name** | YES | ex: `output.txt`
 **display_file_content** | NO | `YES` (default) or `NO`
+
+You can then access the output file in the directory when you ran the action.
 
  * * *
 
