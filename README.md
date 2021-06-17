@@ -28,8 +28,8 @@ Field | Mandatory | Observation
 
 _**Notes**:_
 
-_- A **command line error won't break the workflow**, but just extract the output on the file._
-_- You can then access the **output file** in the directory **where you ran the action**._
+_- A **command line error won't break the workflow**, but just extract the output on the file.
+- You can then access the **output file** in the directory **where you ran the action**._
 
  * * *
 
