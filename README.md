@@ -8,14 +8,6 @@ Github Action to generate an output file from a command execution (success or er
 
 * * *
 
-## 🖥 Supported OS
-
-OS | SUPPORTED
----------- | ------------
-**LINUX** | YES
-**MACOS** | YES
-**WINDOWS** | YES
-
 ## 📚 How to use this action?
 
 The [`actions/checkout`](https://github.com/actions/checkout) is mandatory to use this action, as it will be necessary to access the repository files to get the output file after the action execution.
