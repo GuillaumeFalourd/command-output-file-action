@@ -26,7 +26,7 @@ runs:
     - id: file
       run: |
         ${{ inputs.command_line }} &> ${{ inputs.output_file_name }} || true
-        echo "::set-output name=output_file_name::${{ inputs.output_file_name }}"
+        echo "output_file_name=${{ inputs.output_file_name }}" >> $GITHUB_OUTPUT
       shell: bash
     
     - run: |
