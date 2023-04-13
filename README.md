@@ -32,7 +32,7 @@ Field | Mandatory | Observation
 ```yaml
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: GuillaumeFalourd/command-output-file-action@v1
+      - uses: GuillaumeFalourd/command-output-file-action@v1.1
         with:
           command_line: ls -lha
           output_file_name: output.txt
@@ -44,7 +44,7 @@ Field | Mandatory | Observation
 ```yaml
     steps:
       - uses: actions/checkout@v2.3.4
-      - uses: GuillaumeFalourd/command-output-file-action@v1
+      - uses: GuillaumeFalourd/command-output-file-action@v1.1
         with:
           command_line: ls -lha
           output_file_name: output.txt
